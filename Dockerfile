@@ -20,6 +20,5 @@ COPY . .
 # Expose port 3000 outside container
 EXPOSE 4200
 # Command used to start application
- CMD [ "ng", "serve" ]
- #CMD  "ng", "serve"  --host 10.0.0.116 --port 4200
+ CMD npm run start --host 0.0.0.0 --port 4200
 
